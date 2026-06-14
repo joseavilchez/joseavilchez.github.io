@@ -13,4 +13,5 @@ citation: ""
 featured: false
 ---
 
-This work studies radiation emission from electrons in multi-periodic undulator magnetic fields, analyzing symmetric, asymmetric and anti-symmetric configurations using generalized Bessel function formalism. The results contribute to the understanding of radiation mechanisms in structured magnetic environments.
+This manuscript determines the set of Pareto optimal solutions of certain multiobjective-optimization problems involving continuous linear operators defined on Banach spaces and Hilbert spaces. These multioptimization problems typically arise in engineering. In order to accomplish our goals, we first characterize, in an abstract setting, the set of Pareto optimal solutions of any multiobjective optimization problem. We then provide sufficient topological conditions to ensure the existence of Pareto optimal solutions. Next, we determine the Pareto optimal solutions of convex max–min problems involving continuous linear operators defined on Banach spaces. We prove that the set of Pareto optimal solutions of a convex max–min of form max∥𝑇(𝑥)∥
+, min∥𝑥∥ coincides with the set of multiples of supporting vectors of T. Lastly, we apply this result to convex max–min problems in the Hilbert space setting, which also applies to convex max–min problems that arise in the design of truly optimal coils in engineering.
