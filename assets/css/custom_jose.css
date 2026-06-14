@@ -1,0 +1,46 @@
+.publication-card {
+  margin-bottom: 1.5em;
+  padding-bottom: 1.2em;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.publication-title {
+  margin-bottom: 0.2em;
+}
+
+.publication-meta {
+  color: #666;
+  font-size: 0.95em;
+  margin-bottom: 0.5em;
+}
+
+.publication-buttons {
+  margin-top: 0.7em;
+}
+
+.publication-button {
+  display: inline-block;
+  padding: 4px 10px;
+  margin-right: 6px;
+  margin-bottom: 4px;
+  border-radius: 20px;
+  background-color: #f3f4f6;
+  color: #333;
+  text-decoration: none;
+  font-size: 0.85em;
+}
+
+.publication-button:hover {
+  background-color: #e5e7eb;
+  text-decoration: none;
+}
+
+.publication-tag {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 15px;
+  background-color: #dbeafe;
+  color: #1e3a8a;
+  font-size: 0.75em;
+  margin-left: 8px;
+}

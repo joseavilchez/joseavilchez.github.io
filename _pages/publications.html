@@ -17,11 +17,21 @@ author_profile: true
 
 ---
 
-## All Publications
+## Complete Publication List
 
-{% for post in site.publications %}
+{% assign sorted_publications = site.publications | sort: 'date' | reverse %}
+
+{% assign current_year = "" %}
+
+{% for post in sorted_publications %}
+
+  {% assign year = post.date | date: "%Y" %}
+
+  {% if year != current_year %}
+    {% assign current_year = year %}
+    <h2>{{ current_year }}</h2>
+  {% endif %}
+
   {% include archive-single.html %}
+
 {% endfor %}
-
-
-

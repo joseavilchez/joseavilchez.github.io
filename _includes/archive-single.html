@@ -1,41 +1,55 @@
-<div class="publication-item">
+<div class="publication-card">
 
-  <!-- Title -->
-  <h3 style="margin-bottom:5px;">
-    <a href="{{ post.paperurl | default: post.url }}">
-      {{ post.title }}
-    </a>
+  <h3 class="publication-title">
+    {% if post.paperurl %}
+      <a href="{{ post.paperurl }}">{{ post.title }}</a>
+    {% else %}
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    {% endif %}
   </h3>
 
-  <!-- Venue + Year -->
-  <p style="margin:0; color: #666;">
+  <div class="publication-meta">
     {{ post.venue }} · {{ post.date | date: "%Y" }}
-  </p>
 
-  <!-- Excerpt -->
+    {% if post.category %}
+      <span class="publication-tag">
+        {{ post.category }}
+      </span>
+    {% endif %}
+
+    {% if post.featured %}
+      <span class="publication-tag">
+        Featured
+      </span>
+    {% endif %}
+  </div>
+
   {% if post.excerpt %}
-  <p style="margin-top:5px;">
+  <p>
     {{ post.excerpt }}
   </p>
   {% endif %}
 
-  <!-- Buttons -->
-  <p style="margin-top:8px;">
-    
+  <div class="publication-buttons">
+
     {% if post.paperurl %}
-      <a href="{{ post.paperurl }}">📄 Paper</a>
+      <a class="publication-button" href="{{ post.paperurl }}">
+        📄 Paper
+      </a>
     {% endif %}
 
     {% if post.bibtexurl %}
-      | <a href="{{ post.bibtexurl }}">📚 BibTeX</a>
+      <a class="publication-button" href="{{ post.bibtexurl }}">
+        📚 BibTeX
+      </a>
     {% endif %}
 
     {% if post.slidesurl %}
-      | <a href="{{ post.slidesurl }}">🖥 Slides</a>
+      <a class="publication-button" href="{{ post.slidesurl }}">
+        🖥 Slides
+      </a>
     {% endif %}
 
-  </p>
-
-  <hr style="margin:15px 0;">
+  </div>
 
 </div>
