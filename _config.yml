@@ -23,7 +23,7 @@ repository               : "joseavilchez/joseavilchez.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile_Jose.png"
+  avatar           : "profile_Jose.jpg"
   name             : "Jose Antonio Vílchez Membrilla"
   pronouns         : # example: "she/her"  
   bio              : "Físico y profesor universitario especializado en Electrónica y Electromagnetismo, con experiencia en docencia, investigación y modelado computacional aplicado a la ingeniería."
