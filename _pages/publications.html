@@ -7,7 +7,7 @@ author_profile: true
 
 {% include base_path %}
 
-## Featured Publications
+<h1>Selected Publications</h1>
 
 {% for post in site.publications %}
   {% if post.featured %}
@@ -17,10 +17,26 @@ author_profile: true
 
 ---
 
-## All Publications
+<h1>Complete Publication List</h1>
+<p>Publications are grouped by year of publication.</p>
 
-{% for post in site.publications %}
+{% assign sorted_publications = site.publications | sort: 'date' | reverse %}
+
+{% assign current_year = "" %}
+
+{% for post in sorted_publications %}
+
+  {% assign year = post.date | date: "%Y" %}
+
+  {% if year != current_year %}
+    {% assign current_year = year %}
+
+<h2>{{ current_year }}</h2>
+
+  {% endif %}
+
   {% include archive-single.html %}
+
 {% endfor %}
 
 
