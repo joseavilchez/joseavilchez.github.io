@@ -23,14 +23,14 @@ repository               : "joseavilchez/joseavilchez.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  avatar           : "profile_Jose.png"
+  name             : "Jose Antonio Vílchez Membrilla"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  bio              : "Físico y profesor universitario especializado en Electrónica y Electromagnetismo, con experiencia en docencia, investigación y modelado computacional aplicado a la ingeniería."
+  location         : "Cádiz, España"
+  employer         : "Profesor Sustituto - Universidad de Cádiz"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "josea.vilchezm@gmail.com" 
 
   # Academic websites
   academia         : # URL
