@@ -1,16 +1,53 @@
 ---
 layout: archive
-title: "Talks and presentations"
+title: "Talks and Presentations"
 permalink: /talks/
 author_profile: true
 ---
 
+{% include base_path %}
+
 {% if site.talkmap_link == true %}
-
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
-
+<p style="text-decoration:underline;">
+  <a href="/talkmap.html">
+    See a map of all the places I've given a talk
+  </a>
+</p>
 {% endif %}
 
+<h1>Selected Talks and Presentations</h1>
+
+<p>
+A selection of invited talks, conference presentations and seminars.
+</p>
+
 {% for post in site.talks reversed %}
+  {% if post.featured %}
+    {% include archive-single-talk.html %}
+  {% endif %}
+{% endfor %}
+
+<hr>
+
+<h1>Complete List</h1>
+
+<p>
+Talks and presentations are grouped by year.
+</p>
+
+{% assign sorted_talks = site.talks | sort: 'date' | reverse %}
+
+{% assign current_year = "" %}
+
+{% for post in sorted_talks %}
+
+  {% assign year = post.date | date: "%Y" %}
+
+  {% if year != current_year %}
+    {% assign current_year = year %}
+    <h2>{{ current_year }}</h2>
+  {% endif %}
+
   {% include archive-single-talk.html %}
+
 {% endfor %}
